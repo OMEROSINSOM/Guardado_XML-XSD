@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Datos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Dato" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numClientes" type="xs:int"/>
+              <xs:element name="numCajeros" type="xs:int"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

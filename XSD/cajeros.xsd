@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Cajeros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Cajero" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre" type="xs:string"/>
+              <xs:element name="App" type="xs:string"/>
+              <xs:element name="Apm" type="xs:string"/>
+              <xs:element name="FondoInicial" type="xs:double"/>
+              <xs:element name="FondoFinal" type="xs:double"/>
+            </xs:sequence>
+            <xs:attribute name="numEmpleado" type="xs:int" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
